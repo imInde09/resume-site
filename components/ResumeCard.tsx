@@ -12,11 +12,9 @@ export default function ResumeCard({ pdfUrl }: ResumeCardProps) {
         const body = encodeURIComponent(
             `Hi,
 
-You can view or download my resume using the link below:
+You can view or download Resume of Prathamesh Inde by using the link below:
 ${window.location.origin}${pdfUrl}
-
-Regards,
-Prathamesh Inde`
+`
         );
 
         window.location.href = `mailto:?subject=${subject}&body=${body}`;
